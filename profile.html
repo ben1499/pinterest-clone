@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://kit.fontawesome.com/2746d01d26.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="">
+        <a href="index.html"><svg class="logo cus-hover" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M0 12c0 5.123 3.211 9.497 7.73 11.218-.11-.937-.227-2.482.025-3.566.217-.932 1.401-5.938 1.401-5.938s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.682 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.86-4.991-4.86-3.398 0-5.393 2.549-5.393 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.189-.332 1.355-.053.218-.173.265-.4.159-1.492-.694-2.424-2.875-2.424-4.627 0-3.769 2.737-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.899 0 4.117-2.595 7.431-6.199 7.431-1.211 0-2.348-.63-2.738-1.373 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12"></path></svg></a>
+         </div>
+         <button class="home-btn"><a href="index.html">Home</a></button>
+        <button><a href="">Explore</a></button>
+        <div class="dropdown-create">
+            <span class="dropdown-label">Create</span>
+            <!-- <span class="dropdown-arrow"></span> -->
+            <div class="JME zI7 iyn Hsu"><svg class="gUZ R19 U9O kVc" height="12" width="12" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z"></path></svg></div>
+            <ul class="dropdown-menu-create">
+              <li>Create Idea Pin</li>
+              <li>Create Pin</li>
+            </ul>
+          </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input onclick="showSearchDropdown();" type="search" placeholder="Search your pins">
+        </div>
+        <div id="search-dropdown">
+            <div class="ideas">
+                <p>Ideas for you</p>
+                <div class="categories">
+                    <div class="tab">
+                        <img src="images/planet.jpg" alt="">
+                        <p>Landscape Photography</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img2.jpg" alt="">
+                        <p>Nature Photography</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img3.jpg" alt="">
+                        <p>Cars</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img4.jpg" alt="">
+                        <p>Wallpapers</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img5.jpg" alt="">
+                        <p>Art</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popular">
+                <p>Popular on Pinterest</p>
+                <div class="categories">
+                    <div class="tab">
+                        <img src="images/img3.jpg" alt="">
+                        <p>Profile Picture</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/planet.jpg" alt="">
+                        <p>4K wallpaper</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img2.jpg" alt="">
+                        <p>Drawing ideas</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img5.jpg" alt="">
+                        <p>HD background</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img4.jpg" alt="">
+                        <p>Matching pfp</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img5.jpg" alt="">
+                        <p>HD background</p>
+                    </div>
+                    <div class="tab">
+                        <img src="images/img4.jpg" alt="">
+                        <p>Matching pfp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div title="Notifications" onclick="showNotification();" class="notification active">
+            <svg class="icon cus-hover" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M12 24c-1.66 0-3-1.34-3-3h6c0 1.66-1.34 3-3 3zm7-10.83c1.58 1.52 2.67 3.55 3 5.83H2c.33-2.28 1.42-4.31 3-5.83V7c0-3.87 3.13-7 7-7s7 3.13 7 7v6.17z"></path></svg>
+        </div>
+        <div id="notification-menu">
+            <h4>Updates</h4>
+            <div class="Jea KS5 hA- mQ8 zI7 iyn Hsu"><svg width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.73597 118.92C-6.85813 112.364 3.39896 74.1199 9.06316 60.4621C16.6599 60.4621 34.886 40.5078 43.0491 24.1182C65.7059 20.0211 103.223 32.1097 118.016 29.2416C132.81 26.3735 153.334 64.4095 156 94.286V132.186C156 141.918 81.5324 135.259 70.5371 132.186C59.5419 129.113 23.7286 127.114 6.73597 118.92Z" fill="#D3E6F4"></path><path d="M122.876 65.6959L109.637 96.4489C114.439 106.483 114.166 121.969 111.732 128.794L20.124 94.765C21.828 89.9869 34.1086 76.6429 44.1069 72.1068L53.3339 39.8634C53.3339 39.8634 81.2047 14.6653 99.3003 21.3872C106.031 23.8876 113.537 27.6322 117.839 36.2895C117.839 36.2895 123.669 60.1554 122.876 65.6959Z" fill="#1F4F60"></path><path d="M77.5664 126.922C74.7434 134.837 64.1584 135.852 58.4133 136.037C57.9123 136.053 49.808 129.362 49.808 129.362C48.2419 125.427 48.0668 120.458 49.4821 116.489L64.2544 119.658L77.5664 126.922Z" fill="#1F4F60"></path><path d="M143.149 38.668L140.613 46.8725L133.858 47.613L140.613 52.4263V58.1843L145.258 53.869L153.987 52.4263L146.526 47.613L145.258 43.5471L143.149 38.668Z" fill="#FFCF7F"></path><path d="M102.8 16.0723L98.5471 24.1121L92.5938 25.0173L98.5471 29.8305L99.3483 35.5886L103.993 31.2733L112.723 29.8305L103.993 25.0173V20.9514L102.8 16.0723Z" fill="#FFCF7F"></path><path d="M117.081 58.2247L122.494 38.668L125.602 56.8515L135.871 63.3778L123.614 67.3762L121.385 73.6091L117.081 80.7823V69.2873L104.671 59.7252L117.081 58.2247Z" fill="#FFCF7F"></path></svg></div>   
+            <h3>Nothing to see here (yet)!</h3>
+            <p>Try exploring your home feed, creating a board or following someone with ideas that inspire you.</p>
+        </div>
+        <div title="Messages" class="message" id="message-icon" onclick="showMessageMenu();">
+            <svg class="icon cus-hover" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0"></path></svg>
+        </div>
+        <div id="message-dropdown"">
+            <div class="first-row">
+                <p>Inbox</p>
+                <i onclick="showInboxMenu();" class="fa-solid fa-ellipsis cus-hover"></i>
+                <div class="inbox-menu">
+                    <ul>
+                        <li>Mark all as read</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="new-message">
+                <div class="new-message-icon-container">
+                    <i class="fa-solid fa-pen-to-square new-message-icon"></i>
+                </div>
+                <p>New Message</p>
+            </div>
+            <h1>Share ideas with your friends</h1>
+            <div class="message-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search by name or email address">
+            </div>
+        </div>
+        <div title=Your profile" class="profile">
+            <button class="profile-page-button"><img class="cus-hover" src="images/profile.jpg" alt=""></button>
+        </div>
+        <div title="Accounts and more options" class="options-menu-icon" onclick="showOptionsMenu();" style="height:24px;width:24px"><svg class="cus-hover cus-effect" height="12" width="12" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z"></path></svg></div>
+        <div class="options-menu">
+            <ul>
+                <li class="legend">Currently in</li>
+                <li class="profile-info">
+                    <img src="images/profile.jpg" alt="">
+                    <div>
+                        <h3>Jane Doe</h3>
+                        <p>Personal</p>
+                        <p>janedoe@gmail.com</p>
+                    </div>
+                    <i class="fa-solid fa-check"></i>
+                </li>
+                <li class="legend">Your accounts</li>
+                <li>Add account</li>
+                <li>Convert to business</li>
+                <li class="legend">More options</li>
+                <li>Settings</li>
+                <li>Tune your home feed</li>
+                <li>Install the Windows app</li>
+                <li>Your privacy rights</li>
+                <li class="target"><p>Get help</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </li>
+                <li class="target"><p>See Terms of Service</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </li>
+                <li class="target"><p>See Privacy Policy</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </li>
+                <li class="target"><p>Be a beta tester</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </li>
+                <li>Log out</li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="profile-content">
+        <div title="More" class="sticky">
+            <i class="fa-solid fa-question"></i>
+        </div>
+        <img src="images/profile.jpg" alt="">
+        <h1>Jane Doe</h1>
+        <p class="username">@janedoe338</p>
+        <p class="follower-count">10 following</p>
+        <div class="profile-buttons">
+            <button class="light-btn">Share</button>
+            <button class="light-btn">Edit Profile</button>
+        </div>
+        <div class="tab-container">
+            <div class="tab-links">
+              <button class="tab-link active" data-tab="tab1">Created</button>
+              <button class="tab-link" data-tab="tab2">Saved</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-panel active" id="tab1">
+                <h2>Inspire with an Idea Pin</h2>
+                <button class="red-btn">Create</button>
+              </div>
+              <div class="tab-panel" id="tab2">
+                <p>You haven't saved any pins yet</p>
+                <button class="light-btn">Find ideas</button>
+              </div>
+            </div>
+          </div>
+          
+    </main>
+</body>
+</html>
